@@ -4,10 +4,32 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d" Height="600" Width="450" ResizeMode="NoResize" ShowInTaskbar="False" WindowStartupLocation="CenterScreen" WindowStyle="None" Background="#FF199C49">
     <Grid>
         <StackPanel Margin="50">
-            <Image Source="Assets/Logo2.png"/>
+            <Image Source="/Assets/Logo2.png" Width="150" Height="96"/>
+            <Border Background="White" Margin="10 20" CornerRadius="5">
+                <StackPanel Margin="25">
+                    <ComboBox Margin="15" Style="{StaticResource MaterialDesignFloatingHintComboBox}" materialDesign:HintAssist.Hint="Region"> 
+                        <ComboBoxItem Content="RU"/>
+                        <ComboBoxItem Content="KR"/>
+                        <ComboBoxItem Content="BR1"/>
+                        <ComboBoxItem Content="OC1"/>
+                        <ComboBoxItem Content="JP1"/>
+                        <ComboBoxItem Content="NA1"/>
+                        <ComboBoxItem Content="EUW1"/>
+                        <ComboBoxItem Content="TR1"/>
+                        <ComboBoxItem Content="LA1"/>
+                        <ComboBoxItem Content="LA2"/>
+                    </ComboBox>
+                    <TextBox Margin="15" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Summoner"/>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" RenderTransformOrigin="0.53,-0.791">
+                        <Button Margin="15 50" Content="CANCEL"/>
+                        <Button Margin="15 50" Content="SIGN UP"/>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
         </StackPanel>
     </Grid>
 </Window>
