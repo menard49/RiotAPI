@@ -20,9 +20,14 @@ namespace WpfApp1
     /// </summary>
     public partial class MainWindow : Window
     {
+        ControllerMain controller;
+        ViewModelMain viewModel;
         public MainWindow()
         {
+            controller = new ControllerMain();
             InitializeComponent();
         }
+
+        private void ButtonSign
     }
 }
