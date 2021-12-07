@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
+﻿using System.IO;
 using System.Net.Http;
 
 namespace WpfApp1.API
@@ -20,16 +15,16 @@ namespace WpfApp1.API
             key = GetKey("API/Key.txt");
         }
 
-        protected HttpResponseMessage GET(string URL)
-        {
-            using (HttpClient client = new HttpClient())
-            {
-                var result = client.GetAsync(URL);
-                result.Wait();
-
-                return result.Result;
-            }
-        }
+       protected HttpResponseMessage GET(string URL)
+       {
+           using (HttpClient client = new HttpClient())
+           {
+               var result = client.GetAsync(URL);
+               result.Wait();
+      
+               return result.Result;
+           }
+       }
         protected string GetURI(string path)
         {
             return "https://" + Region + ".api.riotgame.com/lol/" + path + "?api_key=" + key;

@@ -14,20 +14,23 @@
             <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Top">
                 <Border Width="100" Height="100" Margin="20" BorderBrush="White" BorderThickness="1" CornerRadius="15">
                 </Border>
-                <TextBlock Margin="20" FontSize="30" Text="Summoner Name" Foreground="DarkGray"/>
+                
+                    
+                
+                <TextBlock Margin="20" FontSize="30" Text="{Binding Path=SummonerName}" Foreground="DarkGray"/>
                 <StackPanel Orientation="Horizontal" Margin="20 10">
                     <StackPanel Margin="5">
                         <TextBlock Text="WINS" FontSize="15" FontWeight="Bold" Foreground="Green"/>
-                        <TextBlock Text="25" FontSize="18" Foreground="Gray" HorizontalAlignment="Center"/>
+                        <TextBlock Text="{Binding Path=WINS}" FontSize="18" Foreground="Gray" HorizontalAlignment="Center"/>
                     </StackPanel>
                     <StackPanel Margin="5">
                         <TextBlock Text="LOSSES" FontSize="15" FontWeight="Bold" Foreground="DarkRed"/>
-                        <TextBlock Text="10" FontSize="18" Foreground="Gray" HorizontalAlignment="Center"/>
+                        <TextBlock Text="{Binding Path=LOSSES}" FontSize="18" Foreground="Gray" HorizontalAlignment="Center"/>
                     </StackPanel>
                 </StackPanel>
                 <StackPanel Margin="30">
                     <TextBlock Text="LEVEL" FontSize="15" Foreground="LightGray"/>
-                    <TextBlock Text="73" HorizontalAlignment="Center" FontSize="80" Foreground="Gray"/>
+                    <TextBlock Text="{Binding Path=LEVEL}" HorizontalAlignment="Center" FontSize="80" Foreground="Gray"/>
                 </StackPanel>
                 <Grid Margin="20 0">
                     
@@ -40,8 +43,8 @@
         </Border>
         <StackPanel HorizontalAlignment="Right" Margin="30 100">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
-                <TextBlock FontSize="15" Foreground="Gray"  Text="SILVER" Margin="5" VerticalAlignment="Center"/>
-                <TextBlock FontSize="20" Foreground="Gray" Text="III" Margin="5"/>
+                <TextBlock FontSize="15" Foreground="Gray"  Text="{Binding Path=Tier}" Margin="5" VerticalAlignment="Center"/>
+                <TextBlock FontSize="20" Foreground="Gray" Text="{Binding Path=Rank}" Margin="5"/>
             </StackPanel>
         </StackPanel>
     </Grid>
