@@ -26,8 +26,9 @@
                     <TextBox Text="{Binding SummonerName}" Margin="15" Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.Hint="Summoner"/>
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" RenderTransformOrigin="0.53,-0.791">
                         <Button Margin="15 50" Content="CANCEL"/>
-                        <Button x:Name ="ButtonSignUp" Margin="15 50" Content="SIGN UP" Click="ButtonSignUp_Click"/>
+                        <Button x:Name ="ButtonSignUp" Margin="15 50" Content="SEARCH" Click="ButtonSignUp_Click"/>
                     </StackPanel>
+                    
                 </StackPanel>
             </Border>
         </StackPanel>

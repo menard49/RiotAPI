@@ -20,3 +20,8 @@ C:\Users\menar\Desktop\RiotAPI\RiotAPI\WpfApp1\obj\Debug\WpfApp1.csproj.CoreComp
 C:\Users\menar\Desktop\RiotAPI\RiotAPI\WpfApp1\obj\Debug\WpfApp1.csproj.CopyComplete
 C:\Users\menar\Desktop\RiotAPI\RiotAPI\WpfApp1\obj\Debug\WpfApp1.exe
 C:\Users\menar\Desktop\RiotAPI\RiotAPI\WpfApp1\obj\Debug\WpfApp1.pdb
+C:\Users\menar\Desktop\RiotAPI\RiotAPI\WpfApp1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\menar\Desktop\RiotAPI\RiotAPI\WpfApp1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\menar\Desktop\RiotAPI\RiotAPI\WpfApp1\bin\Debug\API\Key.txt
+C:\Users\menar\Desktop\RiotAPI\RiotAPI\WpfApp1\obj\Debug\View\WindowProfile.g.cs
+C:\Users\menar\Desktop\RiotAPI\RiotAPI\WpfApp1\obj\Debug\View\WindowProfile.baml

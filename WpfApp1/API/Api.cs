@@ -17,7 +17,7 @@ namespace WpfApp1.API
         public Api(string region)
         {
             Region = region;
-            key = GetKey("Api.txt");
+            key = GetKey("API/Key.txt");
         }
 
         protected HttpResponseMessage GET(string URL)
@@ -32,7 +32,7 @@ namespace WpfApp1.API
         }
         protected string GetURI(string path)
         {
-            return "https://" + Region + ".api.riotgame.com/lol/" + path + "?api key=" + key;
+            return "https://" + Region + ".api.riotgame.com/lol/" + path + "?api_key=" + key;
         }
 
         public string GetKey(string path)

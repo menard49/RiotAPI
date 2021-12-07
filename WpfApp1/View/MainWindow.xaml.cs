@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfApp1.Controller;
+using WpfApp1.View.ViewModel;
+using WpfApp1.View;
 
 namespace WpfApp1
 {
@@ -25,9 +28,30 @@ namespace WpfApp1
         public MainWindow()
         {
             controller = new ControllerMain();
+            viewModel = new ViewModelMain();
             InitializeComponent();
+
+            this.DataContext = viewModel;
         }
 
-        private void ButtonSign
+        private void ButtonSignUp_Click(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrEmpty(viewModel.Region))
+                return;
+            if (string.IsNullOrEmpty(viewModel.SummonerName))
+                return;
+            
+            if(controller.GetSummoner(viewModel.Region, viewModel.SummonerName))
+            {
+                WindowProfile profile = new WindowProfile();
+                profile.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Not Found");
+            }
+
+        }
     }
 }
